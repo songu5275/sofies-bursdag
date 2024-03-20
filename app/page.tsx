@@ -11,24 +11,10 @@ export default function Home() {
           <Image src={sofie} alt="Vercel Logo" width={72} height={16} />
         </div>
         <div className="m-20">
-          <p style={{ fontFamily: "Arial, sans-serif", fontWeight: "bold" }}>
-            Tema: ____{" "}
-          </p>
-          <p
-            style={{
-              fontFamily: "Arial, sans-serif",
-              fontWeight: "bold",
-              fontSize: "1.5rem",
-            }}
-          >
-            Dato: ____
-          </p>
-          <p style={{ fontFamily: "Arial, sans-serif", fontWeight: "bold" }}>
-            Tidspunkt: ____
-          </p>
-          <p style={{ fontFamily: "Arial, sans-serif", fontWeight: "bold" }}>
-            Sted: ____
-          </p>
+          <p style={{ fontFamily: 'Arial, sans-serif', fontWeight: 'bold' }}>Tema: ____ </p>
+          <p style={{ fontFamily: 'Arial, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>Dato: ____</p>
+          <p style={{ fontFamily: 'Arial, sans-serif', fontWeight: 'bold' }}>Tidspunkt: ____</p>
+          <p style={{ fontFamily: 'Arial, sans-serif', fontWeight: 'bold' }}>Sted: ____</p>
         </div>
       </div>
     </div>
