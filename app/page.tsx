@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl mt-10 font-extrabold">🥂 VELKOMMEN 🥂</h1>
         <h3 className="text-md m-5 font-semibold">Du er herved invitert til min 21 års-dag 💜</h3>
-        <div className="border border-white p-5 text-white">
+        <div className="border-white border-4 my-5 bg-purple-400 p-5 text-white">
           <p>
             <span className="font-bold">DATO: </span>12. april
           </p>
