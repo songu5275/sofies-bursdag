@@ -5,14 +5,12 @@ export default function LikeButton() {
     const [hasLiked, setHasLiked] = useState(false);
 
     useEffect(() => {
-        // Fetch the like count from the textile file or any other source
+        // Fetch the like count from the server when the component mounts
         fetchLikeCount();
     }, []);
 
     const fetchLikeCount = () => {
-        // Fetch like count from the textile file or any other source
-        // This could be similar to the previous example
-
+        // Simulate fetching like count from the server (replace with your actual fetch logic)
         // For demonstration, setting initial like count to 0
         setLikeCount(0);
 
@@ -32,7 +30,8 @@ export default function LikeButton() {
                 setLikeCount(updatedLikeCount);
                 localStorage.removeItem('hasLiked');
                 setHasLiked(false);
-                // You may also update the like count on the server or in the textile file here
+                // Send a request to the server to update the like count
+                updateLikeCount(updatedLikeCount);
             }
         } else {
             // Like: Increment like count and update local storage
@@ -40,8 +39,29 @@ export default function LikeButton() {
             setLikeCount(updatedLikeCount);
             localStorage.setItem('hasLiked', 'true');
             setHasLiked(true);
-            // You may also update the like count on the server or in the textile file here
+            // Send a request to the server to update the like count
+            updateLikeCount(updatedLikeCount);
         }
+    };
+
+    const updateLikeCount = (count:number) => {
+        // Send a request to your server to update the like count
+        // Replace '/update-like-count' with your server endpoint
+        fetch('db/like-count.txt', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ count })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to update like count');
+            }
+        })
+        .catch(error => {
+            console.error('Error updating like count:', error);
+        });
     };
 
     return (
