@@ -47,7 +47,7 @@ export default function Home() {
           {/* <div className="polaroid">
             <Image src={sovepose} alt="Sofie" width={300} height={300} />
           </div> */}
-          <div className="polaroid text-black">
+          <div className="polaroid text-black m-5">
             <h3 className="text-xl font-bold text-center">TEMA:</h3>
             <p className="text-center">Kle deg ut som noe på forbokstaven din 💅</p>
             <Image src={prinsesse} alt="Sofie" width={400} height={400} priority/>
