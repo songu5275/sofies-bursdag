@@ -4,6 +4,7 @@ import Image from "next/image";
 import sofie from "../app/images/sofie.jpg";
 import minisofie from "../app/images/minisofie.jpg"
 import Confetti from 'react-confetti';
+import LikeButton from './components/like-button';
 
 export default function Home() {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -17,8 +18,9 @@ export default function Home() {
     <div className="bg-pink-300 min-h-screen">
       {showConfetti && <Confetti />}
       <div className="flex flex-col justify-center items-center text-white">
-          <h1 className="text-4xl m-20">VELKOMMEN TIL SOFIES 21-ÅRS DAG!</h1>
-          <div className="flex flex-col sm:flex-row gap-10"> 
+          <h1 className="text-4xl mt-10 mb-5">VELKOMMEN TIL SOFIES 21-ÅRS DAG!</h1>
+        <LikeButton/>
+          <div className="flex flex-col sm:flex-row gap-10 mt-10"> 
             <Image src={sofie} alt="Sofie" width={300} height={300} />
             <Image src={minisofie} alt="Sofie" width={300} height={300} />
         </div>
