@@ -8,8 +8,8 @@ export default function Home() {
         <div className="m-20 text-white">
           <h1 className="text-4xl m-20">VELKOMMEN TIL SOFIES 21-ÅRS DAG!</h1>
           <div className="flex gap-10">
-            <Image src={sofie} alt="Vercel Logo" width={72} height={16} />
-            <Image src={sofie} alt="Vercel Logo" width={72} height={16} />
+            <Image src={sofie} alt="Sofie" width={200} height={200} />
+            <Image src={sofie} alt="Sofie" width={200} height={200} />
           </div>
         </div>
         <div className="m-20 text-white">
