@@ -50,7 +50,7 @@ export default function Home() {
           <div className="polaroid text-black">
             <h3 className="text-xl font-bold text-center">TEMA:</h3>
             <p className="text-center">Kle deg ut som noe på forbokstaven din 💅</p>
-            <Image src={prinsesse} alt="Sofie" width={400} height={400} />
+            <Image src={prinsesse} alt="Sofie" width={400} height={400} priority/>
           </div>
         </div>
       </div>
