@@ -26,7 +26,7 @@ export default function Home() {
             <span className="font-bold">DATO: </span>12. april
           </p>
           <p>
-            <span className="font-bold">TIDSPUNKT: </span> 19:00
+            <span className="font-bold">TIDSPUNKT: </span> 19:30
           </p>
           <Link
             className="flex"
